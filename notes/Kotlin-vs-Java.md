@@ -6,7 +6,7 @@
 
 其实，任何一种能在 Java 虚拟机（JVM）上运行的语言来编写 Android app。这段时间，有一种兼容 JVM 的编程语言在 Android 社区十分抢眼，它就是 JetBrains 出品的静态编程语言——Kotlin。
 
-如果你已经对听到许多人对 Kotlin 赞不绝口并且跃跃欲试，那么时机正好。下面我将分为三个部分，循序渐进地介绍和分享如何使用 Kotlin 开发 Android app。  
+如果你已经对听到许多人对 Kotlin 赞不绝口并且跃跃欲试，那么时机正好。我将分为三篇文章（译者注：本文是第一篇），循序渐进地介绍和分享如何使用 Kotlin 开发 Android app。  
 
 首先，我建议你先想一想，为什么想要从 Java 换到 Kotlin，然后我会对你的选择给出意见。  
 
@@ -114,5 +114,32 @@ class MainActivity : AppCompatActivity() {
 
 Kotlin 可以有效地减少样本代码的编写，与 Java 需要编写很多啰嗦的代码相比，Kotlin 有着更好的编程体验。
 
+### 有没有坑？
+
+没有完美的编程语言，Kotlin 也是如此。尽管它为 Android 开发者提供了很多便利，但也有一些坑我们需要注意的。
+
+#### 增大包体积
+
+Kotlin 的标准库和运行时会增大 apk 体积 800KB 左右。
+
+#### 可读性
+
+虽然说 Kotlin 的语法很优雅，但有时候我们会发现有些地方比较难看懂，毕竟我们用了很少的代码量来描述一件事情或者多件事情。Java 虽说比较冗余，但是它把事情都讲清楚了，所以在这方面，它对于陌生的代码的可读性比 Kotlin 要强。
+
+而且，如果使用不恰当，Kotlin 操作符的重载可能会进一步降低代码的可读性。
+
+#### ~~缺少官方的支持~~
+
+（译者注：原文写于2016年底，我们知道今年的 IO 大会上 Kotlin 已经正式入主东宫了）
+
+#### 资源稀缺
+
+Kotlin 相对而言还是一个比较年轻的语言，其社区规模也比较小，特别是跟 Java 这种已经有一点年代基础的语言相比。如果你确实已经转到了 Kotlin 阵营，那么能获取到的教程、博客、开发文档、社区，比如 Stack Overflow 的支持也会相应地少一些。截至本文，Stack Overflow 上面关于 Kotlin 的 post 是 4600，而 Java 的这一数目是 100w+。
+
+## 总结
+
+在这篇文章中，我们思考了为什么在 Android 语言的选择上从 Java 换到了 Kotlin，也更加详细地了解了 Kotlin 这种可能替代 Java 的语言它独特的优势和劣势。
 
 
+
+原文地址 [Java vs. Kotlin: Should You Be Using Kotlin for Android Development?](https://code.tutsplus.com/articles/java-vs-kotlin-should-you-be-using-kotlin-for-android-development--cms-27846)
